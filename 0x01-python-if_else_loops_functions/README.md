@@ -21,24 +21,26 @@ How to use the while and for loops.
 ## Files in this Folder:
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **0-positive_or_negative.py:**
+
 This program will assign a random signed number to the variable **number** each time it is executed. Complete the source code in order to print whether the number stored in the variable **number** is positive or negative.
-<br />
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **1-last_digit.py:**
+
 This program will assign a random signed number to the variable **number** each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable **number**.
-<br />
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **2-print_alphabet.py:**
+
 Program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 <br />
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **3-print_alphabt.py:**
+
 Program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 <br />
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **4-print_hexa.py:**
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **4-print_hexa.py:**<br />
 Program that prints all numbers from **0** to **98** in decimal and in hexadecimal (in format **1 = 0x1**)
-<br />
+
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **5-print_comb2.py:**
 Program that prints numbers from **0** to **99** (in format 01, 02, ...).
