@@ -2,7 +2,7 @@
 
 # Repo: holbertonschool-higher_level_programming
 
- > Repo for all projects of the Python language.
+ > **Repo for all python projects.**
 
  Projects in this Repo:
 
