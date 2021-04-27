@@ -38,7 +38,7 @@ Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/m
 
 #### <img src="https://i.imgur.com/4avMBAO.png" alt="Logo Python" height="30"> 8-concat_edges.py
 
-Complete this <a href="https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py" title="source code" target="_blank">source code</a> to print **object-oriented programming with Python**, followed by a new line.
+Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py) to print **object-oriented programming with Python**, followed by a new line.
 
 #### <img src="https://i.imgur.com/4avMBAO.png" alt="Logo Python" height="30"> 9-easter_egg.py
 
