@@ -4,11 +4,11 @@ if __name__ == "__main__":
 
     argc = len(argv)
     if argc == 1:
-        print("0 Arguments.")
+        print("0 arguments.")
     elif argc == 2:
-        print("1 Argument:")
+        print("1 argument:")
     else:
-        print("{} Arguments:".format(argc - 1))
+        print("{} arguments:".format(argc - 1))
 
     for i, argument in enumerate(argv):
         if i > 0:
