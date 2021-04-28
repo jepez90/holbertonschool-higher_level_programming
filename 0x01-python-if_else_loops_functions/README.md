@@ -1,12 +1,12 @@
- <div align=center>
+<div align=center>
 
 ***holbertonschool-higher_level_programming***
 <hr />
  <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Logo Python" style="max-width:80%;">
  <hr />
-<a href="https://twitter.com/Jepez90"><img src="https://img.shields.io/twitter/follow/jepez90?label=Follow%20me&style=social" alt="Logo  Python">&nbsp;</a>
-<a href="https://www.linkedin.com/in/jerson-p%C3%A9rez-010059a4/"><img src="https://img.shields.io/badge/LinkedIn-Follow-blue" alt="Logo  Python"></a>
-<a href="https://twitter.com/HolbertonCOL"><img src="https://img.shields.io/badge/Holberton_School-red" alt="Logo  Python"></a>
+<a href="https://twitter.com/Jepez90"><img src="https://img.shields.io/twitter/follow/jepez90?label=Follow%20me&style=social" alt="Logo Twitter">&nbsp;</a>
+<a href="https://www.linkedin.com/in/jerson-p%C3%A9rez-010059a4/"><img src="https://img.shields.io/badge/LinkedIn-Follow-blue" alt="Logo LinkedIn">&nbsp;</a>
+<a href="https://twitter.com/HolbertonCOL"><img src="https://img.shields.io/badge/Holberton_School-red" alt="Logo Holberton"></a>
 </div>
 
 # Project: 0x01. Python - if/else, loops, functions.
