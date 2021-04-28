@@ -13,6 +13,7 @@
  > *Repo for all python projects.*
 
 <br />
+
 ## Projects in this Repo:
 
 * <img src="https://i.imgur.com/q4mVetF.png" alt="Logo Python" height="15"> **0x00. Python - Hello, World**<br />
