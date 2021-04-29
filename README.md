@@ -16,15 +16,18 @@
 
 ## Projects in this Repo:
 
-* <img src="https://i.imgur.com/q4mVetF.png" alt="Logo Python" height="15"> **0x00. Python - Hello, World**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x00. Python - Hello, World**<br />
 > <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Exercises about:
 How to use the Python interpreter, How to print text and variables using print, How to use strings, What are indexing and slicing in Python and how to check your code with PEP 8
 
 <br />
 
-* <img src="https://i.imgur.com/q4mVetF.png" alt="Logo Python" height="15"> **0x02. Python - import & modules.**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x01. Python - if/else, loops, functions.**<br />
 > <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Excercises about:
-How to import functions from another file
-How to use imported functions
-How to create a module
-And more...
+Why indentation is so important in Pytho, how to use the if, if ... else statements, how to use comments, how to affect values to variables. how to use the while and for loops...
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x02. Python - import & modules.**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Excercises about:
+How to import functions from another file, how to use imported functions, how to create a module, and more...

@@ -59,7 +59,7 @@ Function that computes **a** to the power of **b** and return the va
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **12-fizzbuzz.py**<br />
 Function that prints the numbers from 1 to 100 separated by a space. For multiples of three print **Fizz** instead of the number and for multiples of five print **Buzz** and for numbers which are multiples of both three and five print **FizzBuzz**.
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **13-insert_number.c**,  <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo Document" height="15"> **lists.h:**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **13-insert_number.c**,  <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **lists.h:**<br />
 Function in C that inserts a number into a sorted singly linked list. 
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **100-print_tebahpla.py:**<br />
