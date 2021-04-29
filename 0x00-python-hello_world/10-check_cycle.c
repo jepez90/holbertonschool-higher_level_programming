@@ -9,25 +9,25 @@
  */
 int check_cycle(listint_t *list)
 {
-	const listint_t *current, *test;
-	unsigned int n, m; /* number of nodes */
+	const listint_t *tortoise, *hare;
 
-	current = list;
-	for (n = 0; current != NULL; n++)
+	if (list == NULL)
+		return (0);
+
+	tortoise = list;
+	hare = list->next;
+
+	while (hare)
 	{
-		if (current == current->next)
+		if (hare == tortoise)
 			return (1);
 
-		test = list;
-		for (m = 0; m < n; m++)
-		{
-			if (current == test)
-				return (1);
+		if (hare->next)
+			hare = hare->next->next;
+		else
+			break;
 
-			test = test->next;
-		}
-
-		current = current->next;
+		tortoise = tortoise->next;
 	}
 
 	return (0);
