@@ -8,22 +8,26 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *current;
+	listint_t *current, *mirror;
 	int i = 0;
 
-	if (!head)
+	if (!head || !(*head))
 		return (1);
 
+	mirror = *head;
 	current = *head;
 	/* travel the list to found its length */
-	while (current->next)
+	while (mirror->next)
 	{
-		current = current->next;
+		mirror = mirror->next;
 		i++;
 	}
 
-	current = *head;
+	if (current->n != mirror->n)
+		return (0);
 
+	i -= 2;
+	current = current->next;
 	while (i > 0)
 	{
 		/* if current is diferent of node in index i */
