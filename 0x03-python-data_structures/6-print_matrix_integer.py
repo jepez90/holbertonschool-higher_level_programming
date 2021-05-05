@@ -6,5 +6,5 @@ def print_matrix_integer(matrix=[[]]):
                 # prints an space before the number if it doesn't the firt
                 print(" ", end="")
             # print the number
-            print("{}".format(number), end="")
+            print("{:d}".format(number), end="")
         print()
