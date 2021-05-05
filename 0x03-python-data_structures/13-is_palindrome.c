@@ -8,54 +8,26 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *current, *mirror;
-	int i = 0;
+	listint_t *current;
+	int i = 0, j, numbers[250] = {0};
 
 	if (!head || !(*head))
 		return (1);
 
-	mirror = *head;
 	current = *head;
 	/* travel the list to found its length */
-	while (mirror->next)
+	while (current)
 	{
-		mirror = mirror->next;
+		numbers[i] = current->n;
+		current = current->next;
 		i++;
 	}
 
-	if (current->n != mirror->n)
-		return (0);
+	i--;
 
-	i -= 2;
-	current = current->next;
-	while (i > 0)
-	{
-		/* if current is diferent of node in index i */
-		if (current->n != get_dnodeint_at_index(current, i)->n)
+	for (j = 0; j < i; j++, i--)
+		if (numbers[j] != numbers[i])
 			return (0);
-		current = current->next;
-		i -= 2;
-	}
+
 	return (1);
-}
-
-
-/**
- * get_dnodeint_at_index - searcha the node with the gived index in the list.
- * @head: pointer to the head of the double linked list.
- * @index: node to be returned
- *
- * Return: node at index or NULL.
- */
-listint_t *get_dnodeint_at_index(listint_t *head, unsigned int index)
-{
-	while (head)
-	{
-		if (index-- == 0)
-			return (head);
-
-		head = head->next;
-	}
-
-	return (NULL);
 }
