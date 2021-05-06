@@ -9,7 +9,7 @@
 int is_palindrome(listint_t **head)
 {
 	listint_t *current;
-	int i = 0, j, numbers[250] = {0};
+	int i = 0, j = 0, numbers[1024] = {0};
 
 	if (!head || !(*head))
 		return (1);
@@ -18,15 +18,14 @@ int is_palindrome(listint_t **head)
 	/* travel the list to found its length */
 	while (current)
 	{
-		numbers[i] = current->n;
+		numbers[i++] = current->n;
 		current = current->next;
-		i++;
 	}
 
 	i--;
 
-	for (j = 0; j < i; j++, i--)
-		if (numbers[j] != numbers[i])
+	while (j < i)
+		if (numbers[j++] != numbers[i--])
 			return (0);
 
 	return (1);
