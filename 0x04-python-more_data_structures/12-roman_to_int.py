@@ -15,7 +15,7 @@ def val_of_symbol(symbol):
 def roman_to_int(roman_string):
     integer = 0
 
-    if roman_string is None and type(roman_string) == str:
+    if roman_string is not None and type(roman_string) == str:
 
         equ_values = [val_of_symbol(l) for l in roman_string]
 
