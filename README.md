@@ -40,3 +40,9 @@ How to import functions from another file, how to use imported functions, how to
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x03. Python - Data Structures: Lists, Tuples**<br />
 > <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Excercises about:
 What are lists, tuples and how to use them, what are the differences and similarities between strings and lists,what are the most common methods of lists and how to use them, how to use lists as stacks and queues, what is tuple packing and unpacking, and more...
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x04. Python - More Data Structures: Set, Dictionary**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Excercises about:
+Work with lists, sets and dictionaries.
