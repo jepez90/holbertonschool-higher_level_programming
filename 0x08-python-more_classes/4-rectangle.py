@@ -74,7 +74,7 @@ class Rectangle():
         if self.area() == 0:
             return ''
 
-        symbol = str(self.print_symbol)
+        symbol = '#'
         line = symbol * self.width + '\n'
         as_string = line * (self.height - 1)
         as_string += symbol * self.width
