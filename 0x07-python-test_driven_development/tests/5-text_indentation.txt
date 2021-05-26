@@ -1,0 +1,52 @@
+===============================
+ test for print_square function
+===============================
+
+this function could be works when is called with two strings as argument.
+
+    >>> file_name = '5-text_indentation'
+    >>> text_indentation = __import__(file_name).text_indentation
+    >>> doc_module = __import__(file_name).__doc__
+
+Documentation
+===============================
+
+Function is documented
+    >>> text_indentation.__doc__ != None and text_indentation.__doc__.count(' ') > 4
+    True
+
+Modulo is Documented
+    >>> doc_module != None and doc_module.count(' ') > 4
+    True
+
+Holberton Requirements
+===============================
+
+first line is #!/usr/bin/python3
+    >>> with open(file_name + '.py') as f: print(f.readline())
+    #!/usr/bin/python3
+    <BLANKLINE>
+
+pep8
+    >>> import os
+    >>> os.system('pep8 ' + file_name + '.py')
+    0
+
+value is not a string
+==============================
+
+    >>> text_indentation(2)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+corect output
+==============================
+
+    >>> text_indentation('a.b:c ? d ?')
+    a
+    <BLANKLINE>
+    b
+    <BLANKLINE>
+    c
+    <BLANKLINE>
+    d

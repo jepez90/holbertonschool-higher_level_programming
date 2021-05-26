@@ -1,0 +1,75 @@
+===============================
+ test for div_matrix function
+===============================
+
+this function could be works when is called with a matrix of integers or
+floats and an integer or floas to divide each value in the matrix.
+
+    >>> file_name = '2-matrix_divided'
+    >>> matrix_divided = __import__(file_name).matrix_divided
+    >>> doc_module = __import__(file_name).__doc__
+
+Documentation
+===============================
+
+Function is documented
+    >>> matrix_divided.__doc__ != None and matrix_divided.__doc__.count(' ') > 1
+    True
+
+Modulo is Documented
+    >>> doc_module != None and doc_module.count(' ') > 1
+    True
+
+Holberton Requirements
+===============================
+
+first line is #!/usr/bin/python3
+    >>> with open(file_name + '.py') as f: print(f.readline())
+    #!/usr/bin/python3
+    <BLANKLINE>
+
+pep8
+    >>> import os
+    >>> os.system('pep8 ' + file_name + '.py')
+    0
+
+Numbers
+===============================
+
+``matrix_divided()`` returns a new matrix with each number of the original
+matrix  divided in another number pased as argument.
+
+    >>> matrix_test = [[3, 6, 7.5], [3, 6, 7.5]]
+
+    >>> matrix_divided(matrix_test, 3)
+    [[1.0, 2.0, 2.5], [1.0, 2.0, 2.5]]
+    >>> matrix_divided(matrix_test, -3)
+    [[-1.0, -2.0, -2.5], [-1.0, -2.0, -2.5]]
+
+
+errors in div argument
+===============================
+
+    >>> matrix_divided(matrix_test, '3')
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix_divided(matrix_test, 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+
+inclomplete matrix
+===============================
+
+    >>> matrix_divided(matrix_test.append([0, 1]), 3)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix_divided([], 3)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix_divided([[0], ['a']], 3)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats

@@ -1,0 +1,71 @@
+===============================
+ test for add_integer function
+===============================
+
+This function could be works when is called with 2 integers or floats as arguments.
+    >>> file_name = '0-add_integer'
+    >>> add_integer = __import__(file_name).add_integer
+    >>> doc_module = __import__(file_name).__doc__
+
+Documentation
+===============================
+Function is documented
+
+    >>> add_integer.__doc__ != None and add_integer.__doc__.count(' ') > 1
+    True
+
+Modulo is Documented
+    >>> doc_module != None and doc_module.count(' ') > 1
+    True
+
+Holberton Requirements
+===============================
+first line is #!/usr/bin/python3
+    >>> with open(file_name + '.py') as f: print(f.readline())
+    #!/usr/bin/python3
+    <BLANKLINE>
+
+pep8
+    >>> import os
+    >>> os.system('pep8 ' + file_name + '.py')
+    0
+
+
+Numbers
+===============================
+
+``add_integer()`` returns the sum of its arguments. For numbers,
+that value is equivalent to using the ``+`` operator.
+
+    >>> add_integer(2, 3)
+    5
+    >>> add_integer(2, -3)
+    -1
+
+It also works with floating-point values.
+
+    >>> add_integer(2.0, 3)
+    5
+    >>> add_integer(2, 3.0)
+    5
+
+Non-Numbers
+===============================
+
+    >>> add_integer('a', 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer(8, '3')
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+Non-all-args
+===============================
+
+    >>> add_integer(3)
+    101
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
