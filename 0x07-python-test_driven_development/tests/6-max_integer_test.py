@@ -11,12 +11,13 @@ class TestMaxInteger(unittest.TestCase):
     """
     def test_max_integer(self):
         # test max integer when exist many types in the list
-        
+
         self.assertAlmostEqual(max_integer([]), None)
         self.assertAlmostEqual(max_integer([1, 2, 5, 4]), 5)
         self.assertAlmostEqual(max_integer([1, 2, 5, 5.6]), 5.6)
         self.assertAlmostEqual(max_integer([-3, -4]), -3)
         self.assertAlmostEqual(max_integer('Hola'), 'o')
+        self.assertAlmostEqual(max_integer([1]), 1)
 
         # test for rise correct errors
         self.assertRaises(TypeError, max_integer, [10, '10'])
