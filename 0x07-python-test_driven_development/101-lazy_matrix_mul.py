@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Module to find the point product of two matrix
-"""
+"""multiply two matrix and return the matrix result"""
+import numpy as np
 
 
-def matrix_mul(m_a, m_b):
+def lazy_matrix_mul(m_a, m_b):
     """multiply two matrix and return the matrix result
 
     Args:
@@ -64,15 +64,7 @@ def matrix_mul(m_a, m_b):
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
-    new_matrix = []
+    a = np.array(m_a)
+    b = np.array(m_b)
 
-    for i in range(len(m_a)):
-        new_row = []
-        for j in range(len(m_b)):
-            number = 0
-            for k in range(len(m_b)):
-                number += (m_a[i][k] * m_b[k][j])
-            new_row.append(number)
-        new_matrix.append(new_row)
-
-    return new_matrix
+    return(a.dot(b))

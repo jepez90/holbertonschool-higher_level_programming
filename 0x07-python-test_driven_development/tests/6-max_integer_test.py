@@ -5,6 +5,7 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
+
 class TestMaxInteger(unittest.TestCase):
     """this class test the function max_integer
     """
@@ -14,7 +15,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertAlmostEqual(max_integer([]), None)
         self.assertAlmostEqual(max_integer([-3, -4]), -3)
 
-        #test for rise correct errors
+        # test for rise correct errors
         self.assertRaises(TypeError, max_integer, [10, 10.1])
         self.assertRaises(TypeError, max_integer, [10, '10'])
         self.assertRaises(TypeError, max_integer, [10, 's'])

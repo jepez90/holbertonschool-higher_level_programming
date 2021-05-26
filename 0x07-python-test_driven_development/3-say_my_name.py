@@ -10,7 +10,8 @@ Example:
 
 
 def say_my_name(first_name, last_name=""):
-    """prints the first an last name as My name is first_name last_name and don't return anything
+    """prints the first an last name as My name is first_name last_name
+    and don't return anything
 
     Args:
         first_name (string): first text to be printed
