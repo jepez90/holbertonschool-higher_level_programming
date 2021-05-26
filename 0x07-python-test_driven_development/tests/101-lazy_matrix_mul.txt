@@ -35,16 +35,6 @@ pep8
 Lists with errors
 ==============================
 
-first argument is not a list
-    >>> function(2, [[1], [2]] )
-    Traceback (most recent call last):
-    TypeError: m_a must be a list
-
-second argument is not a list
-    >>> function([[1], [2]] , 2)
-    Traceback (most recent call last):
-    TypeError: m_b must be a list
-
 firt argument is a list of many types
     >>> function([[1], "hola"] , [[1],[2]])
     Traceback (most recent call last):
@@ -56,7 +46,7 @@ second argument is a list of many types
     TypeError: m_b must be a list of lists
 
 firt argument is an empty list of lists
-    >>> function([[]], [[1],[2]])
+    >>> function([], [[1],[2]])
     Traceback (most recent call last):
     ValueError: m_a can't be empty
 
@@ -65,30 +55,6 @@ second argument is an empty list of lists
     Traceback (most recent call last):
     ValueError: m_b can't be empty
 
-first argument has a list of none integers
-    >>> function([[1],[2.3], ['a']], [[3, 4],[5, 6]])
-    Traceback (most recent call last):
-    TypeError: m_a should contain only integers or floats
-
-second argument has a list of none integers
-    >>> function([[1],[2]], [[3, "4"],[5, 6]])
-    Traceback (most recent call last):
-    TypeError: m_b should contain only integers or floats
-
-first argument is not a rectangle
-    >>> function([[1],[2, 3]], [[3, 4],[5, 6]])
-    Traceback (most recent call last):
-    TypeError: each row of m_a must be of the same size
-
-second argument is not a rectangle
-    >>> function([[1],[2]], [[3, 4],[5, 6, 7]])
-    Traceback (most recent call last):
-    TypeError: each row of m_b must be of the same size
-
-the arguments can't be multiplied
-    >>> function([[1, 2],[3, 4]], [[5, 6],[7, 8], [9, 10]])
-    Traceback (most recent call last):
-    ValueError: m_a and m_b can't be multiplied
 
 corect output
 ==============================
