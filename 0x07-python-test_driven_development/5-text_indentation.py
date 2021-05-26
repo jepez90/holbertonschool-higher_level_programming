@@ -28,10 +28,10 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     for letter in text:
+        out += letter
+
         if letter in '.?:':
             out += '\n\n'
-        else:
-            out += letter
 
     out = out.splitlines()
 

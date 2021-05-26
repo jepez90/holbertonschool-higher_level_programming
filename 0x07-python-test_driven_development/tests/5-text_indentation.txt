@@ -43,10 +43,10 @@ corect output
 ==============================
 
     >>> text_indentation('a.b:c ? d ?')
-    a
+    a.
     <BLANKLINE>
-    b
+    b:
     <BLANKLINE>
-    c
+    c ?
     <BLANKLINE>
-    d
+    d ?
