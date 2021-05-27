@@ -18,7 +18,6 @@ def lazy_matrix_mul(m_a, m_b):
         ValueError: when any list is empty or the matrix can't be multiplied
     """
 
-
     # check for the type of each elemets of the list
     type_each_list_error = '{} must be a list of lists'
     for element in m_a:

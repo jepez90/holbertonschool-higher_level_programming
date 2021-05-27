@@ -4,36 +4,20 @@
 
 this function could be works when is called with two list of lists as arguments.
 
-    >>> file_name = '101-lazy_matrix_mul'
-    >>> function = __import__(file_name).lazy_matrix_mul
-    >>> doc_module = __import__(file_name).__doc__
-
-Documentation
-===============================
-
-Function is documented
-    >>> function.__doc__ != None and function.__doc__.count(' ') > 4
-    True
-
-Modulo is Documented
-    >>> doc_module != None and doc_module.count(' ') > 4
-    True
-
-Holberton Requirements
-===============================
-
-first line is #!/usr/bin/python3
-    >>> with open(file_name + '.py') as f: print(f.readline())
-    #!/usr/bin/python3
-    <BLANKLINE>
-
-pep8
-    >>> import os
-    >>> os.system('pep8 ' + file_name + '.py')
-    0
+    >>> function = __import__('101-lazy_matrix_mul').lazy_matrix_mul
 
 Lists with errors
 ==============================
+
+first argument is not a list
+    >>> function(2, [[1], [2]] )
+    Traceback (most recent call last):
+    TypeError: Scalar operands are not allowed, use '*' instead
+
+second argument is not a list
+    >>> function([[1], [2]] , 2)
+    Traceback (most recent call last):
+    TypeError: Scalar operands are not allowed, use '*' instead
 
 firt argument is a list of many types
     >>> function([[1], "hola"] , [[1],[2]])
@@ -46,7 +30,7 @@ second argument is a list of many types
     TypeError: m_b must be a list of lists
 
 firt argument is an empty list of lists
-    >>> function([], [[1],[2]])
+    >>> function([[]], [[1],[2]])
     Traceback (most recent call last):
     ValueError: m_a can't be empty
 
@@ -55,6 +39,30 @@ second argument is an empty list of lists
     Traceback (most recent call last):
     ValueError: m_b can't be empty
 
+first argument has a list of none integers
+    >>> function([[1],[2.3], ['a']], [[3, 4],[5, 6]])
+    Traceback (most recent call last):
+    TypeError: invalid data type for einsum
+
+second argument has a list of none integers
+    >>> function([[1],[2]], [[3, "4"],[5, 6]])
+    Traceback (most recent call last):
+    TypeError: invalid data type for einsum
+
+first argument is not a rectangle
+    >>> function([[1],[2, 3]], [[3, 4],[5, 6]])
+    Traceback (most recent call last):
+    TypeError: setting an array element with a sequence.
+
+second argument is not a rectangle
+    >>> function([[1],[2]], [[3, 4],[5, 6, 7]])
+    Traceback (most recent call last):
+    TypeError: setting an array element with a sequence.
+
+the arguments can't be multiplied
+    >>> function([[1, 2],[3, 4]], [[5, 6],[7, 8], [9, 10]])
+    Traceback (most recent call last):
+    ValueError: m_a and m_b can't be multiplied
 
 corect output
 ==============================
