@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+""" module for add each argument to a file in JSON format
+
+    example:
+        ./7-add_item.py hola mundo
+
+"""
+
+
 from sys import argv
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
