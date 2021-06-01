@@ -48,6 +48,8 @@ try:
         if line_count % 10 == 0:
             print_stats(total_bytes, status)
 
+    print_stats(total_bytes, status)
+
 except KeyboardInterrupt as err:
     # catch the erro, prints the stats and then raises the error
     print_stats(total_bytes, status)
