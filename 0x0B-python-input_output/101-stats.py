@@ -42,9 +42,9 @@ while (True):
         if status_code in status.keys():
             status[status_code] += 1
 
+        line_count += 1
         if line_count % 10 == 0:
             print_stats(total_bytes, status)
-        line_count += 1
 
     except KeyboardInterrupt as err:
         # catch the erro, prints the stats and then raises the error
