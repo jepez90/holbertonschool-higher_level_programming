@@ -20,7 +20,7 @@ def print_stats(total_bytes, status):
         <status code>: <number>
     """
     stats = "File size: {}\n".format(total_bytes)
-    for status_code in status.keys():
+    for status_code in sorted(status.keys()):
         if status[status_code] != 0:
             stats += "{}: {}\n".format(status_code, status[status_code])
     print(stats, end='')
