@@ -19,6 +19,9 @@ open, read and write in text files. JSON serialization
 
 ## Files in this Folder:
 
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **tests**<br />
+Files for test all functions
+
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **0-read_file.py**<br />
 Function that reads a text file (***UTF8***) and prints it to stdout:
 
