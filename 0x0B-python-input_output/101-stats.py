@@ -37,16 +37,16 @@ try:
     for raw_line in fileinput.input():
         # uses try to handle the ctrl + c signal
         split_line = raw_line.split()
+        if len(split_line) > 1:
+            total_bytes += int(split_line[-1])
 
-        total_bytes += int(split_line[-1])
+            status_code = split_line[-2]
+            if status_code in status.keys():
+                status[status_code] += 1
 
-        status_code = split_line[-2]
-        if status_code in status.keys():
-            status[status_code] += 1
-
-        line_count += 1
-        if line_count % 10 == 0:
-            print_stats(total_bytes, status)
+            line_count += 1
+            if line_count % 10 == 0:
+                print_stats(total_bytes, status)
 
     print_stats(total_bytes, status)
 
