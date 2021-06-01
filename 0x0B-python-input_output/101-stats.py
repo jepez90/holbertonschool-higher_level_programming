@@ -11,7 +11,7 @@ prints those statistics since the beginning:
         possible status code: 200, 301, 400, 401, 403, 404, 405 and 500
         in format: <status code>: <number>
 """
-import json
+import fileinput
 
 
 def print_stats(total_bytes, status):
@@ -31,10 +31,10 @@ status = {'200': 0, '301': 0, '400': 0, '401': 0,
           '403': 0, '404': 0, '405': 0, '500': 0}
 line_count = 0
 
-while (True):
-    # uses try to handle the ctrl + c signal
-    try:
-        raw_line = input('')
+
+try:
+    for raw_line in fileinput.input():
+        # uses try to handle the ctrl + c signal
         split_line = raw_line.split()
 
         total_bytes += int(split_line[-1])
@@ -47,7 +47,7 @@ while (True):
         if line_count % 10 == 0:
             print_stats(total_bytes, status)
 
-    except KeyboardInterrupt as err:
-        # catch the erro, prints the stats and then raises the error
-        print_stats(total_bytes, status)
-        raise err
+except KeyboardInterrupt as err:
+    # catch the erro, prints the stats and then raises the error
+    print_stats(total_bytes, status)
+    raise err
