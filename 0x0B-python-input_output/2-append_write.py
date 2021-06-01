@@ -5,7 +5,8 @@
 
 def append_write(filename="", text=""):
     """ write the content of text into the file called filename and
-    returns the number of characters written
+    returns the number of characters written.
+    it doesn't overrite the file content
 
     args:
         filename (str): name of the file to be written.
