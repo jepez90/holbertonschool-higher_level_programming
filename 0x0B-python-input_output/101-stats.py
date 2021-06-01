@@ -11,6 +11,7 @@ prints those statistics since the beginning:
         possible status code: 200, 301, 400, 401, 403, 404, 405 and 500
         in format: <status code>: <number>
 """
+import json
 
 
 def print_stats(total_bytes, status):
@@ -18,8 +19,7 @@ def print_stats(total_bytes, status):
         File size: <total size>
         <status code>: <number>
     """
-    print("File size: {}".format(total_bytes))
-    stats = ""
+    stats = "File size: {}\n".format(total_bytes)
     for status_code in status.keys():
         stats += "{}: {}\n".format(status_code, status[status_code])
     print(stats, end='')
@@ -27,18 +27,19 @@ def print_stats(total_bytes, status):
 
 total_bytes = 0
 # status is a dict status_code: counter
-status = {200: 0, 301: 0, 400: 0, 401: 0, 403: 0, 404: 0, 405: 0, 500: 0}
+status = {'200': 0, '301': 0, '400': 0, '401': 0,
+          '403': 0, '404': 0, '405': 0, '500': 0}
 line_count = 0
 
 while (True):
     # uses try to handle the ctrl + c signal
     try:
-        raw_line = input()
+        raw_line = input('')
         split_line = raw_line.split()
 
         total_bytes += int(split_line[-1])
 
-        status_code = int(split_line[-2])
+        status_code = split_line[-2]
         if status_code in status.keys():
             status[status_code] += 1
 
