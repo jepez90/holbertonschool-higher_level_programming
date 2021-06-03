@@ -34,21 +34,8 @@ class Square():
             position (int, int): the initial position of the square,
                 cant be negatives
         """
-
-        if type(size) != int:
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
-
-        if (type(position) != tuple or
-                len(position) != 2 or
-                type(position[0]) != int or
-                position[0] < 0 or
-                type(position[1]) != int or
-                position[1] < 0):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """Calculate and retrun the area of the square based in its size"""

@@ -19,6 +19,9 @@ Firsts steps with POO in python.
 
 ## Files in this Folder:
 
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **tests**<br />
+Files for test all functions
+
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **0-square.py**<br />
 Write an empty class ***Square*** that defines a square:
 
