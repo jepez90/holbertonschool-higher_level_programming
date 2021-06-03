@@ -24,6 +24,9 @@ And more...
 
 ## Files in this Folder:
 
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **tests**<br />
+Files for test all functions
+
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **0-print_list_integer.py**<br />
 Function that prints all integers of a list.
 
@@ -64,6 +67,7 @@ Complete the source code in order to switch value of ***a*** and ***b***
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **13-is_palindrome.c**, <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **lists.h**<br />
 Function in C that checks if a singly linked list is a palindrome.
+```gcc -Wall -Werror -Wextra -pedantic 13-main.c ../linked_lists.c ../13-is_palindrome.c -o palindrom```
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **100-print_python_list_info.c**<br />
 Function that prints some basic info about Python lists.
