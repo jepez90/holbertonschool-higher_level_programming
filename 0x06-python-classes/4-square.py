@@ -21,11 +21,7 @@ class Square():
         Args:
             size (int): the initial size of the square, can't be negative
         """
-        if type(size) != int:
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+        self.size = size
 
     def area(self):
         """Calculate and retrun the areea of the square based in its size"""

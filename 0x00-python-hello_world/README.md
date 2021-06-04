@@ -18,6 +18,9 @@
 
 ## Files in this Folder:
 
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **tests**<br />
+Files for test all functions
+
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_shell.svg" alt="Logo Shell" height="15"> **0-run**<br />
 Write a Shell script that runs a Python script. The Python file name will be saved in the environment variable **$PYFILE**
 
@@ -50,6 +53,7 @@ Write a Python script that prints &ldquo;The Zen of Python&rdquo;, by�
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **10-check_cycle.c**<br />
 Write a function in C that checks if a singly linked list has a cycle in it.
+`gcc -Wall -Werror -Wextra -pedantic tests/10-main.c 10-check_cycle.c tests/10-linked_lists.c -o cycle`
 
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **lists.h**<br />

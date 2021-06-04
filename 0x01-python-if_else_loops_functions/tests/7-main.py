@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import os, sys
+sys.path.append(os.path.abspath('..'))
+
+
+islower = __import__('7-islower').islower
+
+print("a is {}".format("lower" if islower("a") else "upper"))
+print("H is {}".format("lower" if islower("H") else "upper"))
+print("A is {}".format("lower" if islower("A") else "upper"))
+print("3 is {}".format("lower" if islower("3") else "upper"))
+print("z is {}".format("lower" if islower("z") else "upper"))

@@ -23,6 +23,10 @@ How to use the while and for loops.
 
 ## Files in this Folder:
 
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **tests**<br />
+Files for test all functions
+
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **0-positive_or_negative.py:**<br />
 This program will assign a random signed number to the variable **number** each time it is executed. Complete the source code in order to print whether the number stored in the variable **number** is positive or negative.
 
@@ -64,6 +68,7 @@ Function that prints the numbers from 1 to 100 separated by a space.
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **13-insert_number.c**,  <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **lists.h:**<br />
 Function in C that inserts a number into a sorted singly linked list. 
+`gcc -Wall -Werror -Wextra -pedantic tests/13-main.c tests/linked_lists.c 13-insert_number.c -o insert`
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **100-print_tebahpla.py:**<br />
 Program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (***z*** in lowercase and ***Y*** in uppercase) , not followed by a new line.
