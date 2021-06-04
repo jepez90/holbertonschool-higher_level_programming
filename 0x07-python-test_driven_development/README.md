@@ -19,6 +19,10 @@ how to use doctest and unittest to check the python code
 
 ## Files in this Folder:
 
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **tests**<br />
+Files for test all functions
+
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **0-add_integer.py**
     * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **tests/0-add_integer.txt**<br />
 Function that adds 2 integers.
