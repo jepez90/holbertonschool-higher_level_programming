@@ -9,6 +9,7 @@ class Rectangle(Base):
 
     __msg_negative_error = "{} must be >= 0"
     __msg_neg_or_0_error = "{} must be > 0"
+    properties = ("id", "width", "height", "x", "y")
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -79,10 +80,13 @@ class Rectangle(Base):
             print('#' * self.width)
 
     def update(self, *args, **kwargs):
+        """ change the properties by way list or dictionary
+        if only values are passed, it will be interpreted as in __properties
+        """
         if args is not None and type(args) is tuple and len(args) != 0:
-            properties = ["id", "width", "height", "x", "y"]
+            # search the arg name in __properties class attribute
             for i, arg in enumerate(args):
-                setattr(self, properties[i], arg)
+                setattr(self, type(self).properties[i], arg)
         else:
             if kwargs is not None and type(kwargs) is dict and len(kwargs) != 0:
                 for arg_name, arg in kwargs.items():

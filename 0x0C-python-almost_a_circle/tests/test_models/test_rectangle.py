@@ -2,8 +2,10 @@
 """Module for test the Base class """
 import unittest
 from unittest.case import skip
+# to check std output
 from io import StringIO
 from unittest.mock import patch
+
 from models.rectangle import Rectangle
 
 
@@ -141,17 +143,17 @@ class TestRectangle(unittest.TestCase):
         r7.update(10, 7)
         self.assertEqual(r7.id, 10,
                          'don´t uptdate the first argument (id) correctly.')
-        self.assertEqual(r7.area(), 14,
+        self.assertEqual(r7.area(), 7 * 2,
                          'don´t uptdate the second argument (id) correctly.')
 
         r7.update(10, 8, 8)
-        self.assertEqual(r7.area(), 64,
+        self.assertEqual(r7.area(), 8 * 8,
                          'don´t uptdate any argument (id) correctly.')
 
         r7.update(6, 3, 10, 19, 14)
         self.assertEqual(r7.id, 6,
                          'don´t uptdate any argument (id) correctly.')
-        self.assertEqual(r7.area(), 30,
+        self.assertEqual(r7.area(), 3 * 10,
                          'don´t uptdate any argument (id) correctly.')
         self.assertEqual(r7.x, 19,
                          'don´t uptdate any argument (id) correctly.')
