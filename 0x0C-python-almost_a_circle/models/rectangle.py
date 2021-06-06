@@ -66,3 +66,28 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError(self.__msg_negative_error.format("y"))
         self.__y = value
+
+    def area(self):
+        """ Calc the area of the rectangle (width * height) and return it """
+        return (self.width * self.height)
+
+    def display(self):
+        """ prints a representation of the square by # """
+        print('\n' * self.y, end='')
+        for i in range(self.height):
+            print(' ' * self.x, end='')
+            print('#' * self.width)
+
+    def update(self, *args, **kwargs):
+        if args is not None and type(args) is tuple and len(args) != 0:
+            properties = ["id", "width", "height", "x", "y"]
+            for i, arg in enumerate(args):
+                setattr(self, properties[i], arg)
+        else:
+            if kwargs is not None and type(kwargs) is dict and len(kwargs) != 0:
+                for arg_name, arg in kwargs.items():
+                    setattr(self, arg_name, arg)
+
+    def __str__(self):
+        txt = "[Rectangle] ({}) {}/{} - {}/{}"
+        return txt.format(self.id, self.x, self.y, self.width, self.height)
