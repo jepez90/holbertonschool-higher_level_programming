@@ -9,7 +9,7 @@ class Rectangle(Base):
 
     __msg_negative_error = "{} must be >= 0"
     __msg_neg_or_0_error = "{} must be > 0"
-    properties = ("id", "width", "height", "x", "y")
+    PROPERTIES = ('id', 'width', 'height', 'x', 'y')
 
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -86,11 +86,20 @@ class Rectangle(Base):
         if args is not None and type(args) is tuple and len(args) != 0:
             # search the arg name in __properties class attribute
             for i, arg in enumerate(args):
-                setattr(self, type(self).properties[i], arg)
+                setattr(self, type(self).PROPERTIES[i], arg)
         else:
             if kwargs is not None and type(kwargs) is dict and len(kwargs) != 0:
                 for arg_name, arg in kwargs.items():
                     setattr(self, arg_name, arg)
+
+    def to_dictionary(self):
+        """ that returns the dictionary representation of a Rectangle """
+        dictionary = {}
+        for prop in type(self).PROPERTIES:
+            dictionary[prop] = getattr(self, prop)
+
+        return dictionary
+
 
     def __str__(self):
         txt = "[Rectangle] ({}) {}/{} - {}/{}"

@@ -7,7 +7,7 @@ class Square(Rectangle):
     """ Defines a square representation. inherits of Rectangle class
     """
 
-    properties = ("id", "size", "x", "y")
+    PROPERTIES = ("id", "size", "x", "y")
 
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)

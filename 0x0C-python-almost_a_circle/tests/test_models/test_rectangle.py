@@ -187,3 +187,9 @@ class TestRectangle(unittest.TestCase):
                          'don´t uptdate any argument (id) correctly.')
         self.assertEqual(r8.y, 14,
                          'don´t uptdate any argument (id) correctly.')
+
+    def test_to_dicttionary(self):
+        """ check if to_dictionary returns the dict correctly """
+        r9 = Rectangle(4, 6, 8, 3, 12)
+        self.assertEqual(r9.to_dictionary(),
+                    {'id': 12, 'width': 4, 'height': 6, 'x': 8, 'y': 3})
