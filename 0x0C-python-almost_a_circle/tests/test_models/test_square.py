@@ -18,12 +18,7 @@ class TestSquare(unittest.TestCase):
         starts at 0.
         """
 
-        s1 = Square(10)
-        self.assertEqual(s1.id, 1, 'error at set first id')
-
-        s2 = Square(4, 10, 3)
-        self.assertEqual(s2.id, 2, 'error at set second id')
-
+       
         s3 = Square(10, 0, 0, 12)
         self.assertEqual(s3.id, 12, 'error at give id in the constructor')
 

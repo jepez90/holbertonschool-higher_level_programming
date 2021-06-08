@@ -17,12 +17,6 @@ class TestRectangle(unittest.TestCase):
         starts at 0.
         """
 
-        r1 = Rectangle(10, 2)
-        self.assertEqual(r1.id, 1, 'error at set first id')
-
-        r2 = Rectangle(2, 10)
-        self.assertEqual(r2.id, 2, 'error at set second id')
-
         r3 = Rectangle(10, 2, 0, 0, 12)
         self.assertEqual(r3.id, 12, 'error at give id in the constructor')
 
