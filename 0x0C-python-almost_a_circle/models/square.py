@@ -41,3 +41,11 @@ class Square(Rectangle):
                     for arg_name, arg in kwargs.items():
                         if arg_name in type(self).PROPERTIES:
                             setattr(self, arg_name, arg)
+
+    def to_dictionary(self):
+        """ that returns the dictionary representation of a Rectangle """
+        dictionary = {}
+        for prop in type(self).PROPERTIES:
+            dictionary[prop] = getattr(self, prop)
+
+        return dictionary
