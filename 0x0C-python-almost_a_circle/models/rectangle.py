@@ -86,7 +86,7 @@ class Rectangle(Base):
         if args is not None and type(args) is tuple and len(args) != 0:
             # search the arg name in __properties class attribute
             for i, arg in enumerate(args):
-                if i < len(type(self).PROPERTIES)
+                if i < len(type(self).PROPERTIES):
                     setattr(self, type(self).PROPERTIES[i], arg)
         else:
             if kwargs is not None:
