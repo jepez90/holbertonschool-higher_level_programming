@@ -88,9 +88,10 @@ class Rectangle(Base):
             for i, arg in enumerate(args):
                 setattr(self, type(self).PROPERTIES[i], arg)
         else:
-            if kwargs is not None and type(kwargs) is dict and len(kwargs) != 0:
-                for arg_name, arg in kwargs.items():
-                    setattr(self, arg_name, arg)
+            if kwargs is not None:
+                if type(kwargs) is dict and len(kwargs) != 0:
+                    for arg_name, arg in kwargs.items():
+                        setattr(self, arg_name, arg)
 
     def to_dictionary(self):
         """ that returns the dictionary representation of a Rectangle """
@@ -99,7 +100,6 @@ class Rectangle(Base):
             dictionary[prop] = getattr(self, prop)
 
         return dictionary
-
 
     def __str__(self):
         txt = "[Rectangle] ({}) {}/{} - {}/{}"

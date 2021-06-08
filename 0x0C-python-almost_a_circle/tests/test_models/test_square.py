@@ -42,7 +42,6 @@ class TestSquare(unittest.TestCase):
 
         self.assertRaises(ValueError, Square, 0)
 
-
     def test_str(self):
         """ check if the printable representation is correct """
 

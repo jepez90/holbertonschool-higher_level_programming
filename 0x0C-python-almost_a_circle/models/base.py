@@ -40,4 +40,3 @@ class Base:
         """
         if type(value) is not int:
             raise TypeError(cls.__msg_integer_error.format(name))
-
