@@ -63,6 +63,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """ return a list of instances with the attributes in the file  """
         list_of_instances = []
         file_name = cls.__name__ + '.json'
         with open(file_name, 'r', encoding='utf8') as file:
@@ -73,6 +74,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """ obtains the string json representation from an object  """
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return '[]'
         return json.dumps(list_dictionaries, sort_keys=True)
