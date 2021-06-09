@@ -48,8 +48,8 @@ class Base:
         list_dictionaries = []
 
         if list_objs is not None and len(list_objs) != 0:
-            for object in list_objs:
-                list_dictionaries.append(object.to_dictionary())
+            for obj in list_objs:
+                list_dictionaries.append(obj.to_dictionary())
 
         file_name = cls.__name__ + ".json"
         with open(file_name, 'w', encoding='utf8') as file:
@@ -76,7 +76,7 @@ class Base:
     def to_json_string(list_dictionaries):
         """ obtains the string json representation from an object  """
         if list_dictionaries is None or list_dictionaries == []:
-            return '[]'
+            return "[]"
         return json.dumps(list_dictionaries)
 
     @staticmethod
