@@ -192,11 +192,14 @@ class TestRectangle(unittest.TestCase):
     def test_to_dicttionary(self):
         """ check if to_dictionary returns the dict correctly """
         r9 = Rectangle(4, 6, 8, 3, 12)
-        self.assertEqual(r9.to_dictionary(),
-                         {'id': 12, 'width': 4, 'height': 6, 'x': 8, 'y': 3})
+        expect_out = {'id': 12, 'width': 4, 'height': 6, 'x': 8, 'y': 3}
+        self.assertEqual(r9.to_dictionary(), expect_out)
 
     def test_to_json_string(self):
         """ check if return the correct json string from a list of dicts """
         r10 = Rectangle(3, 4)
-        self.assertEqual(Rectangle.to_json_string([r10.to_dictionary(), {"a":1}]),
-             '[{"height": 4, "id": 17, "width": 3, "x": 0, "y": 0}, {"a": 1}]')
+        r10.id = 18
+        expect_out = '[{"height": 4, "id": 18, "width": 3, "x": 0, "y": 0}, '\
+            '{"a": 1}]'
+        self.assertEqual(Rectangle.to_json_string([r10.to_dictionary(),
+                                                   {"a": 1}]), expect_out)
