@@ -66,7 +66,7 @@ class Base:
         list_of_instances = []
         file_name = cls.__name__ + '.json'
         with open(file_name, 'r', encoding='utf8') as file:
-            list_of_dict =  Base.from_json_string(file.read())
+            list_of_dict = Base.from_json_string(file.read())
         for dictionary in list_of_dict:
             list_of_instances.append(cls.create(**dictionary))
         return list_of_instances
