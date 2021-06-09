@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ Defines Base class """
 
+import json
+
 
 class Base:
     """ Defines a Base from geometry objects
@@ -41,3 +43,46 @@ class Base:
         if type(value) is not int:
             raise TypeError(cls.__msg_integer_error.format(name))
 
+    @classmethod
+    def save_to_file(cls, list_objs):
+        list_dictionaries = []
+
+        if list_objs is not None and type(list_objs) == \
+                list and len(list_objs) != 0:
+            for object in list_objs:
+                list_dictionaries.append(object.to_dictionary())
+
+        file_name = cls.__name__ + ".json"
+        with open(file_name, 'w', encoding='utf8') as file:
+            json.dump(list_dictionaries, file)
+
+    @classmethod
+    def create(cls, **dictionary):
+        instance = cls(1, 1)
+        instance.update(**dictionary)
+        return instance
+
+    @classmethod
+    def load_from_file(cls):
+        file_name = cls.__name__ + '.json'
+        with open(file_name, 'r', encoding='utf8') as file:
+            return json.load(file)
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return '[]'
+        if type(list_dictionaries) != list:
+            raise TypeError("Invalid object")
+        for dictionary in list_dictionaries:
+            if type(dictionary) is not dict:
+                raise TypeError("Invalid object")
+
+        return json.dumps(list_dictionaries, sort_keys=True)
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or len(json_string) == 0:
+            return []
+        else:
+            return json.loads(json_string)

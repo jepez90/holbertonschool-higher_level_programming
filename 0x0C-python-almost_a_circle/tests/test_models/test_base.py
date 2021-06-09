@@ -19,3 +19,10 @@ class TestBase(unittest.TestCase):
         self.assertEqual(base4.id, 12)
         self.assertEqual(base3.id, 3)
         self.assertRaises(TypeError, Base().__init__, "12")
+
+    def test_to_json_string(self):
+        """ check if return the correct json string from a list of dicts """
+        base = Base(1)
+        self.assertEqual(Base.to_json_string([{'id': 1}]), '[{"id": 1}]')
+        self.assertEqual(Base.to_json_string(None), '[]')
+        self.assertEqual(Base.to_json_string([]), '[]')

@@ -25,5 +25,5 @@ if __name__ == "__main__":
     r1.update(89, 2, 3, 4, 5)
     print(r1)
     r1.update()
-    
+
     r1.update(89, 2, 3, 4, 5, 6)

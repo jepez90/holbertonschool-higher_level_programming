@@ -160,6 +160,8 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r7.y, 14,
                          'don´t uptdate any argument (id) correctly.')
 
+        self.assertRaises(TypeError, r7.update(), 6, "3", 10, 19, 14)
+
     def test_update_kwargs(self):
         """ test the update function with arguments by 'key-worded argument'
         way """
@@ -192,4 +194,10 @@ class TestRectangle(unittest.TestCase):
         """ check if to_dictionary returns the dict correctly """
         r9 = Rectangle(4, 6, 8, 3, 12)
         self.assertEqual(r9.to_dictionary(),
-                    {'id': 12, 'width': 4, 'height': 6, 'x': 8, 'y': 3})
+                         {'id': 12, 'width': 4, 'height': 6, 'x': 8, 'y': 3})
+
+    def test_to_json_string(self):
+        """ check if return the correct json string from a list of dicts """
+        r10 = Rectangle(3, 4)
+        self.assertEqual(Rectangle.to_json_string([r10.to_dictionary(), {"a":1}]),
+             '[{"height": 4, "id": 17, "width": 3, "x": 0, "y": 0}, {"a": 1}]')

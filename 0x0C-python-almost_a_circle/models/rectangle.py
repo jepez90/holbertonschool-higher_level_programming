@@ -83,12 +83,14 @@ class Rectangle(Base):
         """ change the properties by way list or dictionary
         if only values are passed, it will be interpreted as in __properties
         """
+
         if args is not None and type(args) is tuple and len(args) != 0:
             # search the arg name in __properties class attribute
             for i, arg in enumerate(args):
                 setattr(self, type(self).PROPERTIES[i], arg)
         else:
-            if kwargs is not None and type(kwargs) is dict and len(kwargs) != 0:
+            if kwargs is not None and type(kwargs) is dict \
+                    and len(kwargs) != 0:
                 for arg_name, arg in kwargs.items():
                     setattr(self, arg_name, arg)
 
@@ -99,7 +101,6 @@ class Rectangle(Base):
             dictionary[prop] = getattr(self, prop)
 
         return dictionary
-
 
     def __str__(self):
         txt = "[Rectangle] ({}) {}/{} - {}/{}"
