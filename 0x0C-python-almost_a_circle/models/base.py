@@ -47,8 +47,7 @@ class Base:
     def save_to_file(cls, list_objs):
         list_dictionaries = []
 
-        if list_objs is not None and type(list_objs) == \
-                list and len(list_objs) != 0:
+        if list_objs is not None and len(list_objs) != 0:
             for object in list_objs:
                 list_dictionaries.append(object.to_dictionary())
 
@@ -64,20 +63,18 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        list_of_instances = []
         file_name = cls.__name__ + '.json'
         with open(file_name, 'r', encoding='utf8') as file:
-            return json.load(file)
+            list_of_dict =  Base.from_json_string(file.read())
+        for dictionary in list_of_dict:
+            list_of_instances.append(cls.create(**dictionary))
+        return list_of_instances
 
     @staticmethod
     def to_json_string(list_dictionaries):
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return '[]'
-        if type(list_dictionaries) != list:
-            raise TypeError("Invalid object")
-        for dictionary in list_dictionaries:
-            if type(dictionary) is not dict:
-                raise TypeError("Invalid object")
-
         return json.dumps(list_dictionaries, sort_keys=True)
 
     @staticmethod
