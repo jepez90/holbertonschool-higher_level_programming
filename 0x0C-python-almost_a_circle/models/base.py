@@ -65,6 +65,8 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         instance = cls(1, 1)
+        # if cls is square, x = 1 then now reset it
+        instance.x = 0
         instance.update(**dictionary)
         return instance
 
@@ -72,6 +74,7 @@ class Base:
     def load_from_file(cls):
         """ return a list of instances with the attributes in the file  """
         list_of_instances = []
+        list_of_dict = []
         file_name = cls.__name__ + '.json'
         with open(file_name, 'r', encoding='utf8') as file:
             list_of_dict = Base.from_json_string(file.read())
