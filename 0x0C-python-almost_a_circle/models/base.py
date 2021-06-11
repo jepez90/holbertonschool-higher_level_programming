@@ -22,8 +22,8 @@ class Base:
     @id.setter
     def id(self, value):
         if value is None:
-            type(self).__nb_objects += 1
-            self.__id = self.__nb_objects
+            Base.__nb_objects += 1
+            self.__id = Base.__nb_objects
         else:
             self.validate_integer("id", value)
             self.__id = value
@@ -53,6 +53,15 @@ class Base:
             file.write(cls.to_json_string(list_of_dicts))
 
     @classmethod
+    def save_to_file_csv(cls, list_objs):
+        file_name = cls.__name__ + ".csv"
+        string = ""
+        for obj in list_objs:
+            string.append(obj.to_dictionary())
+        with open(file_name, 'w', encoding='utf8') as file:
+            file.write(cls.to_json_string(string))
+
+    @classmethod
     def create(cls, **dictionary):
         instance = cls(1, 1)
         instance.update(**dictionary)
@@ -74,7 +83,7 @@ class Base:
         """ obtains the string json representation from an object  """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
-        return json.dumps(list_dictionaries)
+        return json.dumps(list_dictionaries, sort_keys=True)
 
     @staticmethod
     def from_json_string(json_string):
