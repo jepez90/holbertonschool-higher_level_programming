@@ -45,6 +45,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """ save a list of objects serialized in a json file """
         file_name = cls.__name__ + ".json"
         list_of_dicts = []
         if list_objs is not None:
@@ -52,15 +53,6 @@ class Base:
                 list_of_dicts.append(obj.to_dictionary())
         with open(file_name, 'w', encoding='utf8') as file:
             file.write(cls.to_json_string(list_of_dicts))
-
-    @classmethod
-    def save_to_file_csv(cls, list_objs):
-        file_name = cls.__name__ + ".csv"
-        string = ""
-        for obj in list_objs:
-            string.append(obj.to_dictionary())
-        with open(file_name, 'w', encoding='utf8') as file:
-            file.write(cls.to_json_string(string))
 
     @classmethod
     def create(cls, **dictionary):
@@ -95,7 +87,73 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """ obtains the json object from a formatting string  """
         if json_string is None or json_string == []:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """ save a list of objects serialized in a csv file """
+        file_name = cls.__name__ + ".csv"
+        list_dictionaries = []
+        for obj in list_objs:
+            list_dictionaries.append(obj.to_dictionary())
+        with open(file_name, 'w', encoding='utf8') as file:
+            file.write(cls.to_csv_string(list_dictionaries))
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """ return a list of instances with the attributes in the csv file  """
+        list_of_instances = []
+        file_name = cls.__name__ + '.csv'
+        try:
+            with open(file_name, 'r', encoding='utf8') as file:
+                list_of_dict = Base.from_csv_string(file.read())
+        except:
+            list_of_dict = []
+
+        for dictionary in list_of_dict:
+            list_of_instances.append(cls.create(**dictionary))
+        return list_of_instances
+
+    @staticmethod
+    def to_csv_string(list_dictionaries):
+        """ obtains the string csv representation from an object  """
+        string = ""
+        if list_dictionaries is not None or list_dictionaries != []:
+            for dictionary in list_dictionaries:
+                string += (str(dictionary["id"]) + ',')
+                if "size" in dictionary:
+                    string += (str(dictionary["size"]) + ',')
+                else:
+                    string += (str(dictionary["width"]) + ',')
+                    string += (str(dictionary["height"]) + ',')
+                string += (str(dictionary['x']) + ',')
+                string += (str(dictionary['y']) + '\n')
+        return string
+
+    @staticmethod
+    def from_csv_string(csv_string):
+        """ obtains the object from a formatting csv string  """
+        if csv_string is None or csv_string == "":
+            return []
+        else:
+            list_od_dict = []
+            csv_lines = csv_string.splitlines()
+            for line in csv_lines:
+                new_dict = {}
+                list_numbers = line.split(',')
+                new_dict['id'] = int(list_numbers[0])
+                if len(list_numbers) == 4:
+                    new_dict['size'] = int(list_numbers[1])
+                    new_dict['x'] = int(list_numbers[2])
+                    new_dict['y'] = int(list_numbers[3])
+                else:
+                    new_dict['width'] = int(list_numbers[1])
+                    new_dict['height'] = int(list_numbers[2])
+                    new_dict['x'] = int(list_numbers[3])
+                    new_dict['y'] = int(list_numbers[4])
+                list_od_dict.append(new_dict)
+            return list_od_dict
