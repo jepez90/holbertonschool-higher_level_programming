@@ -86,3 +86,9 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s8.area(), 10**2)
         self.assertEqual(s8.x, 19)
         self.assertEqual(s8.y, 14)
+
+    def test_to_dicttionary(self):
+        """ check if to_dictionary returns the dict correctly """
+        r9 = Square(4, 8, 3, 12)
+        expect_out = {'id': 12, 'size': 4, 'x': 8, 'y': 3}
+        self.assertEqual(r9.to_dictionary(), expect_out)
