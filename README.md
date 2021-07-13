@@ -79,12 +79,42 @@ mutable and inmutable object un Python
 
 <br />
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x0B. Python - Input/Output**<br />
-> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Questions and excercises about:
-open, read and write in text files. JSON serialization
-
-<br />
-
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x0A. Python - Inheritance**<br />
 > <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Questions and excercises about:
 inheritance
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x0B. Python - Input/Output**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> In this project, you will review everything about Python:
+    - Import
+    - Exceptions
+    - Class
+    - Private attribute
+    - Getter/Setter
+    - Class method
+    - Static method
+    - Inheritance
+    - Unittest
+    - Read/Write file
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x0C. Python - Almost a circle**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Questions and excercises about:
+open, read and write in text files. JSON serialization
+
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x0D. SQL - Introduction**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Questions and excercises about:
+In this project, you will find excercises about basic sintax and queries of SQL.
+
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x0E. SQL - More queries**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> In this project, you will find excercises about: How to create a new MySQL user, How to manage privileges for a user to a database or table, What’s a PRIMARY KEY, What’s a FOREIGN KEY, How to use NOT NULL and UNIQUE constraints, How to retrieve datas from multiple tables in one request, What are subqueries, What are JOIN and UNION.
+
+

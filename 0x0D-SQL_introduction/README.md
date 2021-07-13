@@ -2,7 +2,7 @@
 
 ***holbertonschool-higher_level_programming***
 <hr />
- <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Logo Python" style="max-width:80%;">
+ <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/banner_mysql.svg" alt="Logo Mysql" style="max-width:80%;">
  <hr />
 <a href="https://twitter.com/Jepez90"><img src="https://img.shields.io/twitter/url?label=%40Jepez90&style=social&url=https%3A%2F%2Ftwitter.com%2FJepez90" alt="Logo Twitter">&nbsp;</a>
 <a href="https://www.linkedin.com/in/jepez90/"><img src="https://img.shields.io/badge/jepez90-%230077B5.svg?&logo=linkedin&logoColor=white" alt="Logo LinkedIn">&nbsp;</a>
@@ -14,7 +14,7 @@
 
 # Project: 0x0D. SQL - Introduction
 
-> In this project, you will find excercises about SQL.
+> In this project, you will find excercises about basic sintax and queries of SQL.
 
 
 ## Files in this Folder:
