@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const dict = require('./101-data').dict;
-let response = {};
-for (key in dict) {
-  let value = dict[key];
+const response = {};
+for (const key in dict) {
+  const value = dict[key];
   if (response[value]) {
     response[value].push(key);
   } else {
