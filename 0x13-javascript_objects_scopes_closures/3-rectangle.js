@@ -1,14 +1,14 @@
 #!/usr/bin/node
 
 module.exports = class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if ((w * h) > 0) {
       this.width = w;
       this.height = h;
     }
   }
 
-  print() {
+  print () {
     let line = '';
     for (let j = 0; j < this.width; j++) {
       line += 'X';
