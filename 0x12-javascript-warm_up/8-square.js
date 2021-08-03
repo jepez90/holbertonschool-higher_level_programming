@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
-let side = parseInt(process.argv[2]);
-if (isNaN(times)) {
+const side = parseInt(process.argv[2]);
+if (isNaN(side)) {
   console.log('Missing size');
 } else {
-  let line = "";
+  let line = '';
   for (let j = 0; j < side; j++) {
     line += 'x';
   }
