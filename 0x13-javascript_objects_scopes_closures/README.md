@@ -30,44 +30,44 @@
 
 ## Files in this Folder:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **0-rectangle.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **0-rectangle.js**<br />
 Write an empty class ***Rectangle*** that defines a rectangle:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **1-rectangle.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **1-rectangle.js**<br />
 Write a class ***Rectangle*** that defines a rectangle:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **2-rectangle.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **2-rectangle.js**<br />
 Write a class ***Rectangle*** that defines a rectangle:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **3-rectangle.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **3-rectangle.js**<br />
 Write a class ***Rectangle*** that defines a rectangle:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **4-rectangle.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **4-rectangle.js**<br />
 Write a class ***Rectangle*** that defines a rectangle:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **5-square.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **5-square.js**<br />
 Write a class ***Square*** that defines a square and inherits from ***Rectangle*** of ***4-rectangle.js***:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **6-square.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **6-square.js**<br />
 Write a class ***Square*** that defines a square and inherits from ***Square*** of ***5-square.js***:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **7-occurrences.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **7-occurrences.js**<br />
 Function that returns the number of occurrences in a list:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **8-esrever.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **8-esrever.js**<br />
 Function that returns the reversed version of a list:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **9-logme.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **9-logme.js**<br />
 Function that prints the number of arguments already printed and the new argument value. (see example below)
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **10-converter.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **10-converter.js**<br />
 Function that converts a number from base 10 to another base passed as argument:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **100-map.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **100-map.js**<br />
 Script that imports an array and computes a new array.
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **101-sorted.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **101-sorted.js**<br />
 Script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **102-concat.js**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> **102-concat.js**<br />
 Script that concats 2 files.
