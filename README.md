@@ -108,13 +108,55 @@ open, read and write in text files. JSON serialization
 <br />
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x0D. SQL - Introduction**<br />
-> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> Questions and excercises about:
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/banner_mysql.svg" alt="Logo MySQL" height="18"> Questions and excercises about:
 In this project, you will find excercises about basic sintax and queries of SQL.
 
 
 <br />
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x0E. SQL - More queries**<br />
-> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> In this project, you will find excercises about: How to create a new MySQL user, How to manage privileges for a user to a database or table, What’s a PRIMARY KEY, What’s a FOREIGN KEY, How to use NOT NULL and UNIQUE constraints, How to retrieve datas from multiple tables in one request, What are subqueries, What are JOIN and UNION.
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/banner_mysql.svg" alt="Logo MySQL" height="15"> In this project, you will find excercises about: How to create a new MySQL user, How to manage privileges for a user to a database or table, What’s a PRIMARY KEY, What’s a FOREIGN KEY, How to use NOT NULL and UNIQUE constraints, How to retrieve datas from multiple tables in one request, What are subqueries, What are JOIN and UNION.
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x0F. Python - Object-relational mapping**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> In the first part, we will use the module MySQLdb to connect to a MySQL database and execute your SQL queries. In the second part, we will use the module SQLAlchemy (don’t ask me how to pronounce it…) an Object Relational Mapper (ORM).  
+    * Why Python programming is awesome
+    * How to connect to a MySQL database from a Python script
+    * How to SELECT rows in a MySQL table from a Python script
+    * How to INSERT rows in a MySQL table from a Python script
+    * What ORM means
+    * How to map a Python Class to a MySQL table
 
 
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x12. JavaScript - Warm up**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="15"> JavaScript is used for many things. At Holberton School, you will use JavaScript for 2 reasons:
+    * Scripting (same as we did with Python)
+    * Web front-end
+    * Why JavaScript programming is amazing
+    * How to run a JavaScript script
+    * How to create variables and constants
+    * What are differences between var, const and let
+    * What are all the data types available in JavaScript
+    * How to use the if, if ... else statements
+    * and more
+
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x13. JavaScript - Objects, Scopes and Closures**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="15"> JavaScript is used for many things. At Holberton School, you will use JavaScript for 2 reasons:
+    *   Scripting (same as we did with Python)
+    *   Web front-end
+    *   Why JavaScript programming is amazing
+    *   How to create an object in JavaScript
+    *   What this means
+    *   What undefined means
+    *   Why the variable type and scope is important
+    *   What is a closure
+    *   What is a prototype
+    *   How to inherit an object from another
+    * and more
