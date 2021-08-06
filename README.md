@@ -108,7 +108,7 @@ open, read and write in text files. JSON serialization
 <br />
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="20"> **0x0D. SQL - Introduction**<br />
-> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/banner_mysql.svg" alt="Logo MySQL" height="18"> Questions and excercises about:
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/banner_mysql.svg" alt="Logo MySQL" height="20"> Questions and excercises about:
 In this project, you will find excercises about basic sintax and queries of SQL.
 
 

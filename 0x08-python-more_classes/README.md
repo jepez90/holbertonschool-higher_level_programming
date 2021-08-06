@@ -19,13 +19,13 @@ class methods and attributes, static methods, magic methods...
 
 ## Files in this Folder:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **tests**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="20"> **tests**<br />
 Files for test all functions
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **0-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **0-rectangle.py**<br />
 Write an empty class ***Rectangle*** that defines a rectangle:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **1-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **1-rectangle.py**<br />
 Write a class ***Rectangle*** that defines a rectangle by: (based on ***0-rectangle.py***)
 * Private instance attribute: ***width***:
 
@@ -43,33 +43,33 @@ Write a class ***Rectangle*** that defines a rectangle by: (based on *
 
 * Instantiation with optional ***width*** and ***height***: ***def __init__(self, width=0, height=0):***
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **2-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **2-rectangle.py**<br />
 Write a class ***Rectangle*** that defines a rectangle by: (based on ***1-rectangle.py***)
 * Public instance method: ***def area(self):*** that returns the rectangle area
 * Public instance method: ***def perimeter(self):*** that returns the rectangle perimeter: 
     * if ***width*** or ***height*** is equal to ***0***, perimeter is equal to ***0***
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **3-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **3-rectangle.py**<br />
 Write a class ***Rectangle*** that defines a rectangle by: (based on ***2-rectangle.py***)
 * ***print()*** and ***str()*** should print the rectangle with the character ***#***:
     * if width or height is equal to 0, return an empty string
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **4-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **4-rectangle.py**<br />
 Write a class ***Rectangle*** that defines a rectangle by: (based on ***3-rectangle.py***)
 * ***repr()*** should return a string representation of the rectangle to be able to recreate a new instance by using ***eval()***
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **5-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **5-rectangle.py**<br />
 Write a class ***Rectangle*** that defines a rectangle by: (based on ***4-rectangle.py***)
 * Print the message ***Bye rectangle...*** (... being 3 dots not ellipsis) when an instance of Rectangle is deleted
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **6-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **6-rectangle.py**<br />
 Write a class ***Rectangle*** that defines a rectangle by: (based on ***5-rectangle.py***)
 * Public class attribute ***number_of_instances***:
     * Initialized to ***0***
     * Incremented during each new instance instantiation
     * Decremented during each instance deletion
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **7-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **7-rectangle.py**<br />
 Write a class ***Rectangle*** that defines a rectangle by: (based on ***6-rectangle.py***)
 * Public class attribute ***print_symbol***:
     * Initialized to ***#***
@@ -77,7 +77,7 @@ Write a class ***Rectangle*** that defines a rectangle by: (based on *
     * Can be any type
 
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **8-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **8-rectangle.py**<br />
 Write a class ***Rectangle*** that defines a rectangle by: (based on ***7-rectangle.py***)
 * Static method def __bigger_or_equal(rect_1, rect_2):__ that returns the biggest rectangle based on the area
     * ***rect_1*** must be an instance of ***Rectangle***, otherwise raise a ***TypeError*** exception with the message ***rect_1 must be an instance of Rectangle***
@@ -85,9 +85,9 @@ Write a class ***Rectangle*** that defines a rectangle by: (based on *
     * Returns ***rect_1*** if both have the same area value
 
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **9-rectangle.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **9-rectangle.py**<br />
 Write a class ***Rectangle*** that defines a rectangle by: (based on ***8-rectangle.py***)
 * Class method ***def square(cls, size=0):*** that returns a new Rectangle instance with ***width == height == size***
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="15"> **101-nqueens.py**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoPythonBasic.svg" alt="Logo Python" height="20"> **101-nqueens.py**<br />
 The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard. Write a program that solves the N queens problem.
