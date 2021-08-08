@@ -16,11 +16,15 @@ if __name__ == "__main__":
     db = MySQLdb.connect(db_address, db_user, db_pass, db_name)
     cursor = db.cursor()
 
-    # create an execute the SQL sencence
-    sql_sentence = 'SELECT * FROM states WHERE name LIKE "N%" ORDER BY id ASC'
-    cursor.execute(sql_sentence)
+    # create an execute the SQL sencence WHERE name LIKE "N%"
+    sql_sentence = 'SELECT * FROM states ORDER BY id ASC'
+    results = cursor.execute(sql_sentence)
     results = cursor.fetchall()
 
     # iterates and print each element in result
     for row in results:
-        print(row)
+        if row[1].startswith("N"):
+            print(row)
+
+    cursor.close()
+    db.close()

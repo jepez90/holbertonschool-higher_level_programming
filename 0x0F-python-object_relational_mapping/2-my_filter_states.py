@@ -26,3 +26,6 @@ if __name__ == "__main__":
     # iterates and print each element in result
     for row in results:
         print(row)
+
+    cursor.close()
+    db.close()
