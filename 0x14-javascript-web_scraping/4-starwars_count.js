@@ -2,7 +2,8 @@
 
 const request = require('request');
 const host = process.argv[2];
-const characterMatch = 'https://swapi-api.hbtn.io/api/people/18/';
+const characterId = 18;
+const characterMatch = 'https://swapi-api.hbtn.io/api/people/' + characterId + '/';
 
 request(host, callback);
 
