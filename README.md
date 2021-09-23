@@ -161,5 +161,10 @@ In this project, you will find excercises about basic sintax and queries of SQL.
 
 <br />
 
-* <a href="0x14-javascript-web_scraping"><img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="20"> **0x13. 0x14. JavaScript - Web scraping**</a><br />
+* <a href="0x14-javascript-web_scraping"><img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="20"> **0x14. JavaScript - Web scraping**</a><br />
 > <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> Excercises about: How to manipulate JSON data, How to use request and fetch API and How to read and write a file using fs module
+
+<br />
+
+* <a href="0x15-javascript-web_jquery"><img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="20"> **0x15. JavaScript - Web jQuery**</a><br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoJs.svg" alt="Logo JS" height="20"> Excercises about: How use jQuery to update the DOM and to make GET and POST AJAX requests
